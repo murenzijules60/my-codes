@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <style>
+          body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(38, 48, 48);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    background: #0b5d2a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+img{
+        height: 50px;
+        width: 40px;
+        padding-top: 0px;
+    }
+    .form-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 5px;
+}
+
+.form-section p {
+    color: #0b5d2a;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     margin-top: 1.5cm;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-box textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background: #0b5d2a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-right: 300%;
+    width: 150px;
+}
+
+.btn:hover {
+    background: #094c22;
+}
+h3{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="nav">
+        <a href="pharmacy.html">🔙</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact us</a>
+        <a href="#">Drugs</a>
+    </div>
+</div>
+<h3><center>Meet with Pharmacy</center></h3>
+<div class="form-box">
+         <input type="text" id="firstName" placeholder="First Name" required><br><br>
+  <input type="text" id="lastName" placeholder="Last Name" required><br><br>
+  <input type="email" id="email" placeholder="Email" required><br><br>
+  <input type="text" id="address" placeholder="Adress: District, Sector, Cell & Village"required><br><br>
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+  function submitForm() {
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let email = document.getElementById("email").value;
+     let address = document.getElementById("address").value;
+
+    if(firstName === "" || lastName === "" || email === "") {
+      alert("Please fill all fields!");
+      return;
+    }
+
+    alert(
+      "Your order sent to Gikonko health center\n\n" +
+      "Name: " + firstName + " " + lastName + "\n" +
+      "Email: " + email + "\n" +
+      "Adress:"+ address + "\n\n"+
+      "Thank you for order, wait for delivery"
+    );
+
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("address").value = "";
+  }
+</script>
+</div>
+</body>
+</html>

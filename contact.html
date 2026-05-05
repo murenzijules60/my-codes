@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gikonko hc Contact</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f5f5;
+}
+.header {
+    background: #0b5d2a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+.hero {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #444;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 5px;
+}
+
+.form-section p {
+    color: #0b5d2a;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-box textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn {
+    background: #0b5d2a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-right: 300%;
+    width: 150px;
+}
+
+.btn:hover {
+    background: #094c22;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #aaa;
+}
+img{
+        height: 50px;
+        width: 40px;
+        padding-top: 0px;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="logo"><img src="gikonko.jpeg" alt="">GIKONKO Health Center</div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="#"><u>Contact us</u></a>
+        <a href="pharmacy.html">Pharmacy</a>
+    </div>
+</div>
+<div class="hero">
+    <h1>Contact us</h1>
+    <p>As Lovely Clients We Can Meet To Gethter To Build More.</p>
+    <div class="contact-info">
+        <div class="box">📞 Phone<br>+250 700 000 000</div>
+        <div class="box">📩 Email<br>www.gikonkohealthcenter.com</div>
+        <div class="box">🌐 Location<br>Gisagara District, Gikonko Secctor</div>
+    </div>
+</div>
+<div class="form-section">
+    <h2>Love to hear from you,</h2>
+    <p>Let's get in touch!</p>
+
+    <div class="form-box">
+        <div class="form-row">
+            <input type="text" placeholder="Your full names" required>
+            <input type="email" placeholder="Your email" required>
+        </div>
+        <input type="text" placeholder="Subject" style="margin-bottom:15px;" required>
+        <textarea placeholder="Write your message" required></textarea>
+        <br><br>
+        <button class="btn" onclick="alert('Your message is arleady Recieved.')">Send message</button>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <h3>GIKONKO health center</h3>
+            <p>Rwanda, Gisagara District</p>
+            <p>Street: KN 25 ST</p>
+            <p>Phone: +250 700 000 000</p>
+            <p>Email: www.gikonkohealthcenter.com</p>
+        </div>
+        <div>
+            <h3>Our Services</h3>
+            <a href="#">> Consultation</a>
+            <a href="#">> Maternity</a>
+            <a href="#">> Dentist</a>
+            <a href="#">> Treatment</a>
+        </div>
+        <div>
+            <h3>Follow us</h3>
+            <a href="#">><u> Facebook</u></a>
+            <a href="#">><u> Twitter</u></a>
+            <a href="#">><u> LinkedIn</u></a>
+            <a href="#">><u> YouTube</u></a>
+        </div>
+    </div>
+</body>
+</html>
