@@ -12,7 +12,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-image: url(service\ bg.png);
+    background-color: #f4f9f6;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -37,59 +37,58 @@ body {
     font-size: 15px;
 }
          .services {
+            font-size: larger;
             padding: 80px 50px;
             text-align: center;
-            color: blue;
+            color: #0b5d2a;
         }
         .services h2 {
             font-size: 2.5rem;
             margin-bottom: 50px;
+            font-size: xx-large ;
         }
         .service-cards {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-        }.card {
+        }
+        .card {
             background: #fff;
-            padding: 30px;
+            padding: 0px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            width: 200px;
+            width: 400px;
+            height: 80px;
             transition: transform 0.3s;
-            color: gray;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
         }
         .card:hover {
             transform: translateY(-10px);
+            background-color: #0da7ce;
+            color: #f4f9f6;
         }
-        .card h3 {
-            margin-bottom: 15px;
-            color:  #0b5d2a;
-        }
-        .card p {
-            font-size: 0.95rem;
-            color: #666;
-        }
+        
         .cart{
             background: #fff;
-            padding: 30px;
+            padding: 0px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            width: 200px;
+            width: 400px;
+            height: 80px;
             transition: transform 0.3s;
-            color: gray;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
         }
         .cart:hover {
             transform: translateY(-10px);
+            background-color: #0da7ce;
+            color: #f4f9f6;
         }
-        .cart h3 {
-            margin-bottom: 15px;
-            color:  #0b5d2a;
-        }
-        .cart p {
-            font-size: 0.95rem;
-            color: #666;
-        }
+        
         .footer{
     background-color: rgb(29, 27, 27);
     text-align: center;
@@ -100,6 +99,17 @@ body {
         height: 50px;
         width: 40px;
         padding-top: 0px;
+    }
+    .p2{
+        color: black;
+        padding-bottom: 14px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: #f4f9f6;
     }
     </style>
 </head>
@@ -117,45 +127,38 @@ body {
 </div>
 </section>
     <section class="services" id="services">
-        <h2>Our Services</h2>
+        <h2>Our Medical Services</h2>
+        <p class="p2">Choose a Medical service needed.</p>
         <div class="service-cards">
-            <div class="card">
-                <h3>Laboratory testing</h3>
-                <p>
-                <ul>
-                    <li>Infectious diseases</li>
-                    <li>Non-infectious diseases</li>
-                    <li>Blood tesing</li>
-                </ul>
-                </p>
+            <button class="card"><a href="pharmacy.html">
+            <div>
+                <b>🔬Laboratory testing</b><br><br>
+                Blood tests & diagnostics
+              
             </div>
-            <div class="card">
-                <h3>Vaccination</h3>
-                <p>
-                    <ul>
-                        <li>Child vaccines</li>
-                        <li>Adult vaccines</li>
-                    </ul>
-                </p>
+            </button>
+            </a>
+            <button class="cart"><a href="pharmacy.html">
+            <div>
+                <b>💉Vaccination</b><br><br>
+                    Immunization services
             </div>
-            <div class="card">
-                <h3>Treatment</h3>
-                <p><ul>
-                    <li>Consultation</li>
-                    <li>Dentist</li>
-                    <li>Ophtalmology</li>
-                    <li>Conical diseases</li>
-                    <li>Circumcision</li>
-                </ul></p>
+            </button>
+            </a>
+            <button  class="cart"><a href="pharmacy.html">
+            <div>
+                <b>🩺General checkup</b><br><br>
+            Medical consultation & diagnosis
             </div>
-            <div class="cart">
-                <h3>Maternity</h3>
-                <p><ul>
-                    <li>Parental consultations</li>
-                    <li>Safe delivery support</li>
-                    <li>Babies health care</li>
-                </ul></p>
+            </button>
+            </a>
+            <button class="cart"><a href="pharmacy.html">
+            <div>
+               <b>🚑Emergency service</b><br><br>
+                24/7 urgent medical care
             </div>
+        </button>
+            </a>
         </div>
     </section>
 <div class="footer">
